@@ -24,10 +24,13 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pixelexperience.tar_compressed_recovery=true
 endif
 
-# Versioning props
+# InexDroid Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
+    org.inexdroid.version=$(INEXDROID_BASE_VERSION) \
+    org.inexdroid.version.display=$(CUSTOM_VERSION) \
+    org.inexdroid.build_date=$(CUSTOM_BUILD_DATE) \
+    org.inexdroid.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.inexdroid.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.inexdroid.codename=$(INEXDROID_BASE_VERSION) \
+    org.inexdroid.build_version=$(INEXDROID_BUILD_VERSION) \
+    ro.inexdroid.maintainer=$(INEXDROID_MAINTAINER)
